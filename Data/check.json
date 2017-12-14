@@ -1,0 +1,10 @@
+/*
+ *      处理订单
+ *  url:http://www.dszongbu.com/realestate/manager/repair/check/
+ *  content-type: application/json;charset=UTF-8
+ *  type: post
+ *  param(rerId) :0     订单状态
+ *  param(rerAcceptUser) :1          当前页数
+ *  param(rerUser) :13     每页显示数量
+ *  {rerId: "9699831440", rerAcceptUser: "manager", rerUser: "3297093972"}
+ */
