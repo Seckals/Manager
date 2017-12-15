@@ -1,14 +1,16 @@
 <template lang="html">
     <div id="list" class="clearfix">
         <div class="item" v-for="item in list">
-            <i class="icon icon-weixiuguanli"></i>
+            <div class="icons">
+                <i class="icon icon-weixiuguanli" :class="{cGreen:info.rerStatus!=6,cGray:info.rerStatus==6}"></i>
+            </div>
             <div class="title">你好</div>
             <div class="stern">
-                <span :class="{colorG:status==6}">(已完成)</span>
+                <span :class="{cGray:status==6}">(已完成)</span>
                 <span>2017-12-13</span>
             </div>
         </div>
-        <div class="more getMore" v-if='' @click="getMore">获取更多...</div>
+        <div class="more getMore" v-if='info.nextPage' @click="getMore">获取更多...</div>
         <div class="more noMore" v-if=''>没有更多了...</div>
     </div>
 </template>
@@ -21,7 +23,7 @@ export default {
             status:6
         }
     },
-    props:["info"],                     // info:{list:[],nextPage}
+    props:["info"],                     // info:{list:[],nextPage,type}
     methods:{
         getMore(){
 
@@ -30,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #list{
     width: 100%;
     height: 100%;
@@ -45,12 +47,14 @@ export default {
 #list>.item:hover{
     background: #e1e0e0;
 }
-#list>.item>i{
-    font-style: normal;
+#list>.item>.icons{
+    height: 100%;
     float: left;
-    color:rgb(142,195,31);
-    font-size:28px;
     margin:0 15px 0 5px;
+}
+#list>.item>.icons>i{
+    font-style: normal;
+    font-size:28px;
 }
 #list>.item>.title{
     float: left;

@@ -16,7 +16,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.colorG{
+.cGray{
     color:#cfcfcf;
+}
+.cGreen{
+    color:rgb(142,195,31);
 }
 </style>
