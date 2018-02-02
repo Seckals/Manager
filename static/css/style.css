@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?l9t95');
+  src:  url('../fonts/icomoon.eot?l9t95#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?l9t95') format('truetype'),
+    url('../fonts/icomoon.woff?l9t95') format('woff'),
+    url('../fonts/icomoon.svg?l9t95#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*播放*/
+.icon-play:before {   
+  content: "\e900";
+}
+/*地址管理*/
+.icon-address:before {
+  content: "\e901";
+}
+/*发现*/
+.icon-find:before {
+  content: "\e902";
+}
+/*返回*/
+.icon-back:before {
+  content: "\e903";
+}
+/*分类*/
+.icon-classify:before {
+  content: "\e904";
+}
+/*分享*/
+.icon-share:before {
+  content: "\e905";
+}
+/*关闭2*/
+.icon-close2:before {
+  content: "\e906";
+}
+/*箭头-上*/
+.icon-up1:before {
+  content: "\e907";
+}
+/*箭头-上*/
+.icon-up:before {
+  content: "\e908";
+}
+/*箭头-下*/
+.icon-down:before {
+  content: "\e909";
+}
+/*箭头-右*/
+.icon-right:before {
+  content: "\e90a";
+}
+/*扫一扫*/
+.icon-sweep:before {
+  content: "\e90b";
+}
+/*身份证*/
+.icon-id:before {
+  content: "\e90c";
+}
+/*收藏*/
+.icon-collect:before {
+  content: "\e90d";
+}
+/*首页*/
+.icon-index:before {
+  content: "\e90e";
+}
+/*说明*/
+.icon-discription:before {
+  content: "\e90f";
+}
+/*搜索*/
+.icon-search:before {
+  content: "\e910";
+}
+/*我的*/
+.icon-me:before {
+  content: "\e911";
+}
+/*消息*/
+.icon-messge:before {
+  content: "\e912";
+}
+/*暂停*/
+.icon-stop:before {
+  content: "\e913";
+}
+/*关闭*/
+.icon-close:before {
+  content: "\e914";
+}
